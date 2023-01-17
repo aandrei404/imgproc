@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+:root {
+    background-color: #6A4267;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+}
+
+::-webkit-scrollbar {
+    width: 0.75rem;
+}
+
+::-webkit-scrollbar-track {
+    background: #6A4267;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #AA3E98;
+    border-radius: 0.25rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 1rem 1rem;
+
+    height: 100vh;
+
+}
+
+.card {
+    width: clamp(550px, 70%, 2000px);
+    height: 90%;
+
+    border-radius: 10px;
+    background: #A288A6;
+    box-shadow: 5px 5px 20px black;
+
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    gap: 1rem 1rem;
+}
+
+.photos {
+    display: flex;
+
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    gap: 2rem;
+}
+
+#canvBefore,
+#canvAfter {
+    position: relative;
+
+    width: 400px;
+    height: 400px;
+
+    border-radius: 10px;
+    box-shadow: 1px 1px 20px black;
+}
+
+.buttonsDiv {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.infoText {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.button {
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    background-color: #BB9BB0;
+    width: fit-content;
+    height: fit-content;
+    padding: 1rem;
+    border: 1px;
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.589);
+    border-radius: 10px;
+    cursor: pointer;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0.2rem;
+}
+
+#fetchText,
+#mirrorText,
+#gsText,
+#normText {
+    background-color: #CCBCBC;
+    width: fit-content;
+    height: fit-content;
+    text-orientation: sideways;
+    text-align: center;
+    padding: 1rem;
+    border: 1px;
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.589);
+    border-radius: 10px;
+}
+
+.button_save {
+    background-color: #F1E3E4;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    width: fit-content;
+    height: fit-content;
+    padding: 1rem;
+    border: 1px;
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.589);
+    border-radius: 10px;
+    cursor: pointer;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0.2rem;
+}

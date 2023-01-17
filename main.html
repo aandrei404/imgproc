@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image processing app</title>
+    <style>
+        @import url(main.css);
+    </style>
+    <script src="main.js"></script>
+    <link rel="icon" type="image/png" href="adressIcon.png" />
+</head>
+
+<body>
+
+    <div class="card">
+        <div class="photos">
+            <canvas id="canvBefore"></canvas>
+            <canvas id="canvAfter"></canvas>
+        </div>
+        <div class="buttonsDiv">
+            <button class="button" onclick="getImg()">
+                <i class="material-icons md-48">cloud_download</i>
+                <span>Get image!</span>
+            </button>
+            <button class="button" onclick="mirrorBut()">
+                <i class="material-icons md-48">compare</i>
+                <span>Mirror image!</span>
+            </button>
+            <button class="button" onclick="gsBut()">
+                <i class="material-icons md-48">filter_b_and_w</i>
+                <span>1900 filter!</span>
+            </button>
+            <button class="button" onclick="normBut()">
+                <i class="material-icons md-48">colorize</i>
+                <span>Normalize colors!</span>
+            </button>
+            <button class="button" onclick="revertBut()">
+                <i class="material-icons md-48">restart_alt</i>
+                <span>Revert image!</span>
+            </button>
+        </div>
+        <div class="infoText">
+            <p id="fetchText"> Fetch ET: <span id="fetchInfo"></span></p>
+            <p id="mirrorText"> Mirror ET: <span id="mirrorInfo"></span></p>
+            <p id="gsText"> Grayscale ET: <span id="gsInfo"></span></p>
+            <p id="normText"> Norm. colors  ET: <span id="normInfo"></span></p>
+            <button class="button_save" onclick="saveBut()">
+                <i class="material-icons md-48">save_alt</i>
+                <span>Save image!</span>
+            </button>
+        </div>
+    </div>
+
+</body>
+
+</html>
